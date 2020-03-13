@@ -17,13 +17,16 @@
     z-index: 20;
 }
 
-.city1 {
+.city {
     display: inline-block;
-    background-image: url('img/manchester.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     z-index: 1;
+}
+
+.city:first-child {
+    background-image: url('img/manchester.jpg');
 }
 
 .img_layout {
@@ -41,15 +44,10 @@
     z-index: 10;
 }
 
-.city2 {
-    display: inline-block;
+.city:nth-child(2) {
     background-image: url('img/bologna.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     top: 316px;
     left: 0;
-    z-index: 1;
 }
 
 .light_overlay {
@@ -60,15 +58,10 @@
     z-index: 10;
 }
 
-.city3 {
-    display: inline-block;
+.city:last-child {
     background-image: url('img/milano.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
     top: 632px;
     left: 0;
-    z-index: 1;
 }
 
 .sepia_overlay {
